@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWSDB - Viewing Bill</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+
+<body class="dashboard-body">
+    <div class="bill-page">
+        <div class="bill-header">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/nwsdb_logo.png" alt="Logo">
+                </a>
+            </div>
+            <h1>View Bill</h1>
+        </div>
+        <div class="bill-card">
+            <h2><span id="acc-no-display"> </span></h2>
+            <div class="bill-details">
+                <div class="bill-row">
+                    <span>Bill Id</span>
+                     <span id="bill-id-display"> </span>
+                </div>
+                <div class="bill-row">
+                    <span>Issued Date</span>
+                     <span id="issued-date-display"> </span>
+                </div>
+                <div class="bill-row">
+                    <span>Due Date</span>
+                     <span id="due-date-display"> </span>
+                </div>
+                <div class="bill-row">
+                    <span>Units Used</span>
+                     <span id="units-used-display"> </span>
+                </div>
+                <div class="bill-total">
+                    <span>Total</span>
+                     <span id="total-payable-display"> </span>
+                </div>
+            </div>
+        </div>
+        <button class="view-bill primary-btn">Proceed to Payment</button>
+        <button class="secondary-btn" id="back-btn">Back to Home</button>
+    </div>
+</body>
+</html>

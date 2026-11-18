@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Sri Lankan NWSDB</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="brand">
+      <a href="index.html" class="brand-logo-slot" aria-label="Home">
+        <img src="assets/icon_logo.png" alt="NWSDB logo">
+      </a>
+      <div class="welcome">WELCOME</div>
+      <h1>Sri Lankan NWSDB</h1>
+    </header>
+
+    <section class="auth-card">
+      <form id="registerForm" class="auth-form active-form">
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="registerEmail">Email</label>
+          <input id="registerEmail" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="phoneNo">Phone Number</label>
+          <input id="phoneNo" name="phoneNo" type="tel" autocomplete="tel" required>
+        </div>
+
+        <div class="field">
+          <label for="nic">NIC</label>
+          <input id="nic" name="nic" type="text" required>
+        </div>
+
+        <div class="field">
+          <label for="registerPassword">Password</label>
+          <input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="6" required>
+        </div>
+        <button class="submit-btn" type="submit">Register</button>
+        <p id="registerMessage" class="form-message"></p>
+
+        <p class="login-link">
+          Already have an account?
+          <a href="index.html">Login</a>
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

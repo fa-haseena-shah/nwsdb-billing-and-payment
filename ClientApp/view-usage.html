@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Account Usage</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body>
+    <div class="usage-page">
+        <div class="usage-header">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/nwsdb_logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="usage-title">
+                <h1>Current Usage</h1>
+                <h2 id="acc-no-display">Acc No</h2>
+            </div>
+        </div>
+        <p class="usage-note">Usage details are updated daily, and up to one month of information is available at a given time.</p>
+        <div class="usage-table">
+            <div class="usage-table-header">
+                <span>Reading Date</span>
+                <span>Reading Value</span>
+            </div>
+            <div id="usage-rows"></div>
+        </div>
+    </div>
+</body>
+</html>

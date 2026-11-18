@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bill</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body class="generate-bill-body">
+  <div class="generate-bill-page">
+    <div class="generate-bill-header">
+        <div class="logo-container">
+            <a href="dashboard.html">
+                <img src="assets/nwsdb_logo.png" alt="NWSDB Logo">
+            </a>
+        </div>
+
+      <h1>Creating Bill</h1>
+    </div>
+
+    <div class="generate-bill-card">
+      <h2><span id="accNo"></span></h2>
+      <div class="generate-bill-row">
+        <span>Units Used</span>
+        <span id="unitsUsed"></span>
+      </div>
+      <div class="generate-bill-row form-row">
+        <label for="dueDate">Due Date</label>
+        <input id="dueDate" type="date" value="" placeholder="">
+      </div>
+      <div class="generate-bill-row form-row">
+        <label for="totalAmount">Total Bill Amount</label>
+        <input id="totalAmount" type="number" value="" placeholder="">
+      </div>
+       <button type="button" class="primary-btn" id="generateBillBtn" disabled>Generate Bill</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provide Water Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+
+<body class="query-customer-body">
+    <div class="query-customer-page">
+        <div class="query-customer-water">
+            <img src="assets/dashboard_img.png" alt="Water">
+        </div>
+        <div class="query-customer-content">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/nwsdb_logo.png" alt="NWSDB Logo">
+                </a>
+            </div>
+
+            <div class="query-customer-main" id="query-customer-main">
+                <h1>Welcome, <span id="user-display"></span>!</h1>
+                <div class="query-customer-form">
+                    <label for="custAccountNo">Enter account number:</label>
+                    <input type="text" id="custAccountNo" name="custAccountNo">
+                    <button type="button" class="primary-btn" id="viewBillBtn">View Bill</button>
+                    <div class="query-customer-secondary">
+                        <button type="button" id="viewPaymentsBtn">View Payments</button>
+                        <button type="button" id="viewUsageBtn">View Usage</button>
+                        <button type="button" id="viewAddressBtn">View Address</button>
+                    </div>
+                    <div class="logout">
+                        <button id="logoutBtn" class="secondary-btn">Log out</button>
+                    </div>
+                    <p id="custMessage"></p>
+                </div>
+            </div>
+
+            <div class="query-staff-main" id="query-staff-main">
+                <h1>Query Water Account</h1>
+                <div class="query-staff-form">
+                    <label for="staffAccountNo">Enter account number:</label>
+                    <input type="text" id="staffAccountNo" name="staffAccountNo">
+                    <button type="button" class="query-staff-primary" id="getDetailsBtn">Get Details</button>
+                    <button type="button" class="query-staff-primary" id="staffViewUsageBtn">View Usage</button>
+                    <button type="button" class="query-staff-primary" id="staffViewPaymentsBtn">View Payment History</button>
+                    <p id="staffMessage"></p>
+                </div>
+            </div>
+
+            <div class="query-partner-main" id="query-partner-main">
+                <h1>Query Water Account</h1>
+                <div class="query-partner-form">
+                    <label for="partnerAccountNo">Enter account number:</label>
+                    <input type="text" id="partnerAccountNo" name="partnerAccountNo">
+                    <button type="button" class="primary-btn" id="partnerViewBillBtn">View Bill</button>
+                    <button type="button" id="partnerViewAddressBtn">View Address</button>
+                    <p id="partnerMessage"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

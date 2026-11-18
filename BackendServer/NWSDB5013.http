@@ -1,0 +1,6 @@
+@NWSDB5013_HostAddress = http://localhost:5142
+
+GET {{NWSDB5013_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

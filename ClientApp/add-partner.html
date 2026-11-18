@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body>
+    <div class="add-partner-page page">
+        <div class="logo-container">
+            <img src="assets/nwsdb_logo.png" alt="Logo">
+        </div>
+        <h2>Add Partner</h2>
+        <section class="auth-card add-partner-form">
+            <form id="addPartnerForm" class="auth-form">
+                <div class="field">
+                    <label for="partnerName">Partner Name</label>
+                    <input type="text" id="partnerName" name="partnerName" required>
+                </div>
+                <div class="field">
+                    <label for="partnerEmail">Partner Email</label>
+                    <input type="email" id="partnerEmail" name="partnerEmail" required>
+                </div>
+                <p id="addPartnerMessage" class="form-message"></p>
+                <button type="submit" class="submit-btn">Add Partner</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

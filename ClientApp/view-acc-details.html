@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewing Account Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body class="account-details-body">
+    <div class="account-details-page">
+        <div class="account-details-header">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/nwsdb_logo.png" alt="NWSDB Logo">
+                </a>
+            </div>
+            <h1>Viewing Account Details</h1>
+        </div>
+        <div class="account-details-card">
+            <h2>CONNECTION <span id="connectionNo"></span></h2>
+
+            <div class="account-detail-row">
+                <span id="addressLabel">Address</span>
+                <span id="addressDisplay"> </span>
+            </div>
+
+            <div class="account-detail-row">
+                <span id="statusLabel">Status</span>
+                <span id="statusDisplay"> </span>
+            </div>
+
+            <div class="account-detail-row">
+                <span id="customerNameLabel">Customer Name</span>
+                <span id="customerNameDisplay"> </span>
+            </div>
+
+            <div class="account-detail-row">
+                <span id="phoneEmailLabel">Phone/Email</span>
+                <span id="phoneEmailDisplay"> </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

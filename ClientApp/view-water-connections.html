@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Water Connections</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body data-list="water-accounts">
+    <div class="list-page">
+        <div class="list-header">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/nwsdb_logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="list-title">
+                <h1>Water Accounts</h1>
+            </div>
+        </div>
+        <div class="list-table">
+            <div class="list-table-header cols-water">
+                <span>Account No</span>
+                <span>Status</span>
+                <span>Customer</span>
+            </div>
+            <div id="list-rows"></div>
+        </div>
+        <p class="list-message" id="list-message"></p>
+        <div class="list-pagination">
+            <button id="prevPageBtn">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPageBtn">Next</button>
+        </div>
+        <div class="list-back">
+            <a href="dashboard.html">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

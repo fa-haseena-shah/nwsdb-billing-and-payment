@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Payment History</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body>
+    <div class="payment-page">
+        <div class="payment-header">
+            <div class="logo-container">
+                <a href="dashboard.html">
+                    <img src="assets/nwsdb_logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="payment-title">
+                <h1>Payment History</h1>
+                <h2 id="acc-no-display">Acc No</h2>
+            </div>
+        </div>
+        <div class="payment-table">
+            <div class="payment-table-header">
+                <strong>Bill Id</strong>
+                <strong>Payment Date</strong>
+                <strong>Amount Paid (LKR)</strong>
+            </div>
+            <div id="payment-rows"></div>
+        </div>
+    </div>
+</body>
+</html>

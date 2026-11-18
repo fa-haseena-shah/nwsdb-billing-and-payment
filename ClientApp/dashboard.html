@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWSDB Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts/api.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/views.js"></script>
+</head>
+<body class="dashboard-shell">
+  <div id="staff-dashboard" class="staff-dashboard">
+    <div class="staff-header">
+        <div class="logo-container">
+            <img src="assets/nwsdb_logo.png" alt="Logo">
+        </div>
+        <div class="welcome-block">
+            <h1>Welcome, <span id="staff-user-display"> </span>!</h1>
+            <h2>NWSDB STAFF</h2>
+        </div>
+    </div>
+    <div class="staff-grid">
+        <button class="staff-tile" id="viewWaterAccountsBtn">
+            View Water<br>Accounts
+        </button>
+        <button class="staff-tile" id="viewCustomersBtn">
+            View<br>Customers
+        </button>
+        <button class="staff-tile" id="generateBillBtn">
+            Generate<br>Bill
+        </button>
+        <button class="staff-tile" id="managePartnersBtn">
+            Manage<br>Partners
+        </button>
+    </div>
+    <div class="logout">
+        <button id="queryAccBtn" class="primary-btn">Check Account Details</button>
+    </div>
+    <div class="logout">
+        <button id="staffLogoutBtn" class="secondary-btn">Log out</button>
+    </div>
+    </div>
+    <div id="partner-dashboard" class="partner-dashboard">
+        <div class="partner-banner">
+            <h1>Welcome, <span id="partner-user-display"> !</span></h1>
+            <h2>NWSDB PARTNER</h2>
+        </div>
+        <div class="partner-body">
+            <div class="logo-container">
+                <img src="assets/nwsdb_logo.png" alt="Logo">
+            </div>
+            <div class="partner-actions">
+                <button class="partner-btn" id="payBillBtn">Pay Bill</button>
+                <button class="partner-btn" id="viewPaymentsBtn">View Payments</button>
+            </div>
+        </div>
+        <div class="logout">
+            <button id="partnerLogoutBtn" class="secondary-btn">Log out</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
